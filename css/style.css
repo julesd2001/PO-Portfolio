@@ -15,9 +15,9 @@ nav {
 h1 {
     font-family: "Poppins", sans-serif;
     text-align: center;
-    font-size: 70px;
-    padding: 30px;
+    font-size: 30px;
     color: white;
+    margin-top: 80px;
 }
 
 article {
@@ -46,9 +46,15 @@ header {
 h2 {
     padding: 10px;
     text-align: center;
+    font-size: 25px;
     font-family: "Inter", sans-serif;
     font-weight: bold;
-    margin: 25px;
+    margin-bottom: 35px;
+    margin-top: 35px;
+}
+
+h3 {
+    font-size: 20px;
 }
 
 ul li {
@@ -120,9 +126,38 @@ footer {
 }
 
 .kaart:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .kaart {
     transition: all 0.3s ease-in-out;
+}
+
+.responsive {
+    max-width: 100%;
+    height: auto;
+}
+
+@media screen and (min-width: 576px) {
+h1 {
+    font-size: 50px;
+    margin-top: 70px;
+}
+
+
+}
+
+@media screen and (min-width: 768px){
+    h1 {
+        font-size: 70px;
+        margin-top: 80px;
+    }
+
+    h2 {
+        font-size: 35px;
+    }
+
+    h3 {
+        font-size: 30px;
+    }
 }

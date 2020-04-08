@@ -8,11 +8,28 @@ nav {
 }
 
 h1 {
-    font-family: "Nunito Sans", sans-serif;
+    font-family: "Poppins", sans-serif;
     text-align: center;
+    font-size: 70px;
+    padding: 30px;
 }
 
 article {
     text-align: center;
+    width: 70%;
+    margin: auto;
 }
 
+header {
+    width: 70%;
+    margin: auto;
+}
+
+h2 {
+    padding: 10px;
+    text-align: left;
+}
+
+ul li {
+    list-style-type: none;
+}

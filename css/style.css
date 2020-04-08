@@ -6,6 +6,7 @@
 body {
     background-color: #23A6D5;
     color: white;
+    font-family: "Inter", sans-serif;
 }
 
 nav {
@@ -33,6 +34,8 @@ header {
 h2 {
     padding: 10px;
     text-align: center;
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
 }
 
 ul li {

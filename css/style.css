@@ -4,13 +4,12 @@
 }
 
 body {
-    background-color: #23A6D5;
-    color: white;
+    background-color: black;
     font-family: "Inter", sans-serif;
 }
 
 nav {
-    box-shadow: 4px 4px 10px gray;
+    box-shadow: 4px 4px 10px black;
 }
 
 h1 {
@@ -18,12 +17,25 @@ h1 {
     text-align: center;
     font-size: 70px;
     padding: 30px;
+    color: white;
 }
 
 article {
     text-align: center;
     width: 70%;
     margin: auto;
+    color: white;
+}
+
+
+article,
+h1,
+footer {
+    animation-name: load-in;
+    animation-duration: 1.3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in-out;
 }
 
 header {
@@ -36,6 +48,7 @@ h2 {
     text-align: center;
     font-family: "Inter", sans-serif;
     font-weight: bold;
+    margin: 25px;
 }
 
 ul li {
@@ -49,4 +62,67 @@ ul li {
     margin-top: 25px;
 }
 
+.mezelf {
+    width: 50%;
+}
 
+.mezelf-img {
+    margin-bottom: 20px;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+.inhoud {
+
+}
+
+@keyframes load-in {
+    from {
+        filter: blur(15px);
+        transform: translate3d(0px, 200px, 0px);
+        opacity: 0;
+    }
+
+    to {
+        filter: blur(0px);
+        transform: translate3d(0px, 0px, 0px);
+        opacity: 1;
+    }
+}
+
+.card-text,
+.card-title {
+    color: black;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.kaart:hover {
+    transform: scale(1.1);
+}
+
+.kaart {
+    transition: all 0.3s ease-in-out;
+}

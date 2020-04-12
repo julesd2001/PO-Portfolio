@@ -14,6 +14,37 @@
 
 </head>
 <body>
+<nav class="navbar navbar-expand-lg fixed-top navbar-dark primary-color bg-dark">
+
+    <!-- Navbar brand -->
+    <a class="navbar-brand font" href="#">Jules Debbaut</a>
+
+    <!-- Collapse button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+            aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="basicExampleNav">
+
+        <!-- Links -->
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home
+                    <span class="sr-only">(current)</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Mijn Projecten</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Mijn Bewijsstukken</a>
+            </li>
+
+        </ul>
+    </div>
+</nav>
 <div id="loader-wrapper">
     <div id="loader"></div>
 
@@ -23,40 +54,8 @@
 </div>
 
 <div class="content">
-    <nav class="navbar navbar-expand-lg fixed-top navbar-dark primary-color bg-dark">
-
-        <!-- Navbar brand -->
-        <a class="navbar-brand font" href="#">Jules Debbaut</a>
-
-        <!-- Collapse button -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
-                aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <!-- Collapsible content -->
-        <div class="collapse navbar-collapse" id="basicExampleNav">
-
-            <!-- Links -->
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home
-                        <span class="sr-only">(current)</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Mijn Projecten</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Mijn Bewijsstukken</a>
-                </li>
-
-            </ul>
-        </div>
-    </nav>
-
     <header>
-        <h1>Welkom bij mijn portfolio!</h1>
+            <h1>Portfolio van Jules Debbaut</h1>
     </header>
 
     <article class="mezelf">
@@ -181,7 +180,7 @@
             <div class="col-sm-12 col-md-6 offset-md-3 col-lg-6 offset-lg-3">
                 <div class="video-container">
                     <!-- YouTube Embed is in orde! Enkel nog de juiste video hieraan linken :) -->
-                    <iframe src="https://www.youtube.com/embed/i6AqWJE89rc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/i6AqWJE89rc" id="border" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -191,6 +190,20 @@
         <p>&copy; 2020 Jules Debbaut</p>
     </footer>
 </div>
+<div class="area" >
+    <ul class="circles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</div >
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <script>
     $('#playButton').click(function () {

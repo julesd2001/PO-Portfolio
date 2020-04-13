@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.9);
     font-family: "Inter", sans-serif;
     font-size: 18px;
     text-align: center;
@@ -372,3 +372,17 @@ h1 {
         border-radius: 50%;
     }
 }
+
+.vaardigheden {
+    max-width: 50%;
+    height: auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex li {
+    flex: 1 1 100%;
+}
+

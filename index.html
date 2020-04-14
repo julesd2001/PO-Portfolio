@@ -69,10 +69,42 @@
     
     <article>
         <h2>Persoonlijke vaardigheden</h2>
-        <!-- dit moet mooier gemaakt worden! -->
-        <figure><img src="img/vaardigheden.jpg" alt="vaardigheden" class="vaardigheden"></figure>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis debitis eaque eveniet facilis itaque
-            modi optio provident quae rem tenetur.</p>
+                <div class="skills">
+                    <div class="skill">
+                        <div class="skill-name">APP</div>
+                        <div class="skill-bar">
+                            <div class="skill-per" per="85"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <div class="skill-name">CCS</div>
+                        <div class="skill-bar">
+                            <div class="skill-per" per="70"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <div class="skill-name">AI</div>
+                        <div class="skill-bar">
+                            <div class="skill-per" per="55"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-name">IOT</div>
+                        <div class="skill-bar">
+                            <div class="skill-per" per="25"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-name">SOFTSKILLS</div>
+                        <div class="skill-bar">
+                            <div class="skill-per" per="65"></div>
+                        </div>
+                    </div>
+        </div>
+        <p class="spatie">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque deserunt ducimus eos illo labore laboriosam nam provident quaerat vel voluptas.</p>
+
     </article>
 
     <article>
@@ -185,26 +217,77 @@
 
     <article>
         <h2>Bewijsstukken</h2>
-        <ul class="flex">
-            <li>
-                <a href="resources/Jules%20Debbaut%201ITF2%20-%20Bewijsstuk%201.pdf" class="btn btn-primary scale">Bewijsstuk 1: Actie MIN</a>
-            </li>
-            <li>
-                <a href="resources/Jules%20Debbaut%201ITF2%20-%20Bewijsstuk%202.pdf" class="btn btn-primary scale">Bewijsstuk 2: Redesign website</a>
-            </li>
-        </ul>
-        <h3>Bewijsstuk 3: Muziekstreaming met Raspberry Pi</h3>
-        <div class="row">
-            <div class="col-sm-12 col-md-6 offset-md-3 col-lg-6 offset-lg-3">
-                <div class="video-container">
-                    <!-- YouTube Embed is in orde! Enkel nog de juiste video hieraan linken :) -->
-                    <iframe src="https://www.youtube.com/embed/i6AqWJE89rc" id="border" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="accordion" id="accordionExample">
+            <div class="card card-bg">
+                <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Bewijsstuk 1: Actie MIN
+                        </button>
+                    </h5>
+                </div>
+
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="card-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        <p><a href="resources/Jules%20Debbaut%201ITF2%20-%20Bewijsstuk%201.pdf" class="btn btn-primary">Bekijk bewijsstuk</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="card card-bg">
+                <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Bewijsstuk 2: Redesign Website
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <div class="card-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    </div>
+                </div>
+            </div>
+            <div class="card card-bg">
+                <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Bewijsstuk 3: Muziek met Raspberry Pi
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-6 offset-md-3 col-lg-6 offset-lg-3">
+                                <div class="video-container">
+                                    <!-- YouTube Embed is in orde! Enkel nog de juiste video hieraan linken :) -->
+                                    <iframe src="https://www.youtube.com/embed/i6AqWJE89rc" id="border" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="card card-bg">
+                <div class="card-header" id="headingFour">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            Bewijsstuk 4: Incompetenties
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                    <div class="card-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    </div>
                 </div>
             </div>
         </div>
     </article>
     <footer>
-
         <h6>&copy; 2020 Jules Debbaut</h6>
         <h6>voor Thomas More Hogeschool, Geel</h6>
     </footer>
@@ -238,7 +321,22 @@
         setTimeout(function() {
             $('body').addClass('loaded');
         }, 1500);
-
+    });
+</script>
+<script>
+    $('.skill-per').each(function(){
+        var $this = $(this);
+        var per = $this.attr('per');
+        $this.css("width",per+'%');
+        $({animatedValue: 0}).animate({animatedValue: per},{
+            duration: 1000,
+            step: function(){
+                $this.attr('per', Math.floor(this.animatedValue) + '%');
+            },
+            complete: function(){
+                $this.attr('per', Math.floor(this.animatedValue) + '%');
+            }
+        });
     });
 </script>
 <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>

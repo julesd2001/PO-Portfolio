@@ -138,6 +138,14 @@ h1 {
     font-size: 50px;
     margin-top: 70px;
 }
+
+    .skills {
+        width: 50%;
+    }
+
+    .accordion {
+        width: 70%;
+    }
 }
 
 @media screen and (min-width: 768px){
@@ -153,11 +161,27 @@ h1 {
     h3 {
         font-size: 30px;
     }
+
+    .skills {
+        width: 60%;
+    }
+
+    .accordion {
+        width: 60%;
+    }
 }
 
 @media screen and (min-width: 992px) {
     .mezelf {
         width: 50%;
+    }
+
+    .skills {
+        width: 65%;
+    }
+
+    .accordion {
+        width: 55%;
     }
 }
 
@@ -378,11 +402,60 @@ h1 {
     height: auto;
 }
 
-.flex {
-    display: flex;
+.skills{
+    width: 40%;
+    padding: 0 20px;
+    margin: auto;
 }
 
-.flex li {
-    flex: 1 1 100%;
+.skill-name{
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 40px 0;
 }
 
+.skill-bar{
+    height: 20px;
+    background: #cacaca;
+    border-radius: 8px;
+}
+
+.skill-per{
+    height: 20px;
+    background-color: #0fbcf9;
+    border-radius: 8px;
+    width: 0;
+    transition: 1s linear;
+    position: relative;
+}
+
+.skill-per::before{
+    content: attr(per);
+    position: absolute;
+    padding: 4px 6px;
+    background-color: #000;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 4px;
+    top: -35px;
+    right: 0;
+    transform: translateX(50%);
+}
+
+.spatie {
+    padding-top: 40px;
+}
+
+.accordion {
+    width: 55%;
+    margin: auto;
+}
+
+.card-bg {
+    background-color: #444444;
+}
+
+.card-body {
+    font-size: 18px;
+}

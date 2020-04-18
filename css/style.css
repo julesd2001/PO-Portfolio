@@ -176,8 +176,8 @@ h1 {
         width: 50%;
     }
 
-    .skills {
-        width: 65%;
+    .skill {
+        width: 55%;
     }
 
     .accordion {
@@ -403,8 +403,12 @@ h1 {
 }
 
 .skills{
-    width: 40%;
-    padding: 0 20px;
+    width: 55%;
+    padding: 20px;
+    margin: auto;
+}
+
+.skill {
     margin: auto;
 }
 
@@ -412,7 +416,9 @@ h1 {
     font-size: 18px;
     font-weight: 700;
     text-transform: uppercase;
-    margin: 40px 0;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    text-align: center;
 }
 
 .skill-bar{
@@ -458,4 +464,33 @@ h1 {
 
 .card-body {
     font-size: 18px;
+}
+
+.skill-name {
+    font-size: 16px;
+}
+
+.fa-play-circle {
+    color: white;
+}
+
+.md-light {
+    color: rgba(255,255,255,1)
+}
+
+.material-icons.md-48 {
+    font-size: 48px;
+}
+
+.material-icons.md-48.md-inactive {
+    color: rgba(255,255,255,0.3);
+}
+
+.knop {
+    margin-top: 20px;
+}
+
+h3 {
+    margin-top: 20px;
+    margin-bottom: 20px;
 }

@@ -28,7 +28,6 @@ article {
     line-height: 2;
 }
 
-
 article,
 h1,
 footer {
@@ -59,13 +58,6 @@ h3 {
 ul li {
     list-style-type: none;
 }
-
-/*.knop {*/
-/*    background-color: royalblue;*/
-/*    color: white;*/
-/*    padding: 10px;*/
-/*    margin-top: 25px;*/
-/*}*/
 
 .mezelf-img {
     margin-bottom: 20px;
@@ -170,6 +162,8 @@ h1 {
     .accordion {
         width: 60%;
     }
+
+
 }
 
 @media screen and (min-width: 992px) {
@@ -362,30 +356,6 @@ h1 {
     animation-delay: 7s;
 }
 
-.circles li:nth-child(8){
-    left: 50%;
-    width: 25px;
-    height: 25px;
-    animation-delay: 15s;
-    animation-duration: 45s;
-}
-
-.circles li:nth-child(9){
-    left: 20%;
-    width: 15px;
-    height: 15px;
-    animation-delay: 2s;
-    animation-duration: 35s;
-}
-
-.circles li:nth-child(10){
-    left: 85%;
-    width: 150px;
-    height: 150px;
-    animation-delay: 0s;
-    animation-duration: 11s;
-}
-
 
 
 @keyframes animate {
@@ -408,7 +378,6 @@ h1 {
 }
 
 .skills{
-    width: 55%;
     margin: auto;
 }
 
@@ -498,4 +467,3 @@ h3 {
     margin-top: 20px;
     margin-bottom: 20px;
 }
-

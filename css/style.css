@@ -21,8 +21,10 @@ h1 {
     margin-top: 80px;
 }
 
+/* knopjes op accordion bij iPhone 5 zijn niet gecentreerd: hoe komt dit? */
+
 article {
-    width: 70%;
+    width: 90%;
     margin: auto;
     color: white;
     line-height: 2;
@@ -67,13 +69,11 @@ ul li {
 @keyframes load-in {
     from {
         filter: blur(15px);
-        transform: translate3d(0px, 200px, 0px);
         opacity: 0;
     }
 
     to {
         filter: blur(0px);
-        transform: translate3d(0px, 0px, 0px);
         opacity: 1;
     }
 }
@@ -137,6 +137,10 @@ h1 {
 
     .accordion {
         width: 90%;
+    }
+
+    article {
+        width: 70%;
     }
 
 }
@@ -466,4 +470,8 @@ h1 {
 h3 {
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+.tekst {
+    text-align: justify;
 }

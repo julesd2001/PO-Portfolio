@@ -46,20 +46,19 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Over mezelf</a>
-            </li>
-            <li class="nav-item">
                 <a class="nav-link" href="#vaardigheden">Persoonlijke vaardigheden</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#sterk">Sterke punten</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#projecten">Projecten</a>
+                <a class="nav-link" href="#projecten">Groei</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#bewijsstukken">Bewijsstukken</a>
+                <a class="nav-link" href="#projecten">Projecten</a>
             </li>
+
+
 
         </ul>
     </div>
@@ -158,6 +157,52 @@
                     <img class="card-img-top" src="img/card3.jpg" alt="Open voor nieuwe ideeën">
                     <div class="card-body">
                         <h5 class="card-title">Open voor nieuwe ideeën</h5>
+                        <p class="card-text">Ik sta altijd open voor de ideeën van anderen. Naar mijn mening is dit goed voor groepswerken, want zo kan iedereen tot een bepaald compromis komen.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </article>
+
+    <article id="groei">
+        <h2>Een moment van groei</h2>
+        <p class="groei">Iets waar ik vooral trots op ben is hoe hard ik gegroeid ben in het vak Webdesign. In het begin van het jaar wist ik nog helemaal niets over hoe je een website moest maken en ondertussen ben ik er al helemaal mee weg. In de kaarten hieronder ziet u mijn groei van de eerste skillstaak tot de laatste uitdaging.</p>
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-12 plaats">
+                <div class="card h-100 kaart">
+                    <img class="card-img-top" src="img/card1.jpg" alt="Harde werker">
+                    <div class="card-body">
+                        <h5 class="card-title">Skillstaak 2</h5>
+                        <p class="card-text">Als ik gemotiveerd ben om ergens voor te gaan, dan ga ik hier ook voor. Ik doe er dan alles aan om mijn taak zo goed mogelijk te voltooien.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-12 plaats">
+                <div class="card h-100 kaart">
+                    <img class="card-img-top" src="img/card2.jpg" alt="Webdesign">
+                    <div class="card-body">
+                        <h5 class="card-title">Skillstaak 3</h5>
+                        <p class="card-text">Het maken van websites vind ik nu enorm leuk om te doen. Ik vind dan ook persoonlijk dat ik hier redelijk goed in ben.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-12 plaats">
+                <div class="card h-100 kaart">
+                    <img class="card-img-top" src="img/card3.jpg" alt="Open voor nieuwe ideeën">
+                    <div class="card-body">
+                        <h5 class="card-title">Keuzeproject 1</h5>
+                        <p class="card-text">Ik sta altijd open voor de ideeën van anderen. Naar mijn mening is dit goed voor groepswerken, want zo kan iedereen tot een bepaald compromis komen.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 plaats">
+                <div class="card h-100 kaart">
+                    <img class="card-img-top" src="img/card3.jpg" alt="Open voor nieuwe ideeën">
+                    <div class="card-body">
+                        <h5 class="card-title">Uitdaging 1</h5>
                         <p class="card-text">Ik sta altijd open voor de ideeën van anderen. Naar mijn mening is dit goed voor groepswerken, want zo kan iedereen tot een bepaald compromis komen.</p>
                     </div>
                 </div>
@@ -305,6 +350,32 @@
     });
 </script>
 <script>
+    $(document).ready(function () {
+        var previousScroll = 0;
+        $(window).scroll(function () {
+            var currentScroll = $(this).scrollTop();
+            if (currentScroll < 100) {
+                showTopNav();
+            } else if (currentScroll > 0 && currentScroll < $(document).height() - $(window).height()) {
+                if (currentScroll > previousScroll) {
+                    hideNav();
+                } else {
+                    showNav();
+                }
+                previousScroll = currentScroll;
+            }
+        });
+
+        function hideNav() {
+            $(".navbar").removeClass("is-visible").addClass("is-hidden");
+        }
+
+        function showNav() {
+            $(".navbar").removeClass("is-hidden").addClass("is-visible").addClass("scrolling");
+        }
+    });
+</script>
+<script>
     $('#playButton').click(function () {
         $('#homeCarousel').carousel('cycle');
     });
@@ -328,6 +399,8 @@
         });
     });
 </script>
+
+
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 </body>
 </html>

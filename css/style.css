@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(230, 230, 230, 1);
     font-family: "Inter", sans-serif;
     font-size: 18px;
     text-align: justify;
@@ -27,10 +27,15 @@ nav {
     transition: transform 0.4s, opacity 0.2s;
 }
 
+.is-visible {
+    transform: translate3d(0px, 0px, 0px);
+    transition: transform 0.25s, opacity 0.2s;
+}
+
 h1 {
     font-family: "Poppins", sans-serif;
     font-size: 40px;
-    color: white;
+    color: black;
     margin-top: 80px;
     text-align: center;
 }
@@ -40,7 +45,7 @@ h1 {
 article {
     width: 90%;
     margin: auto;
-    color: white;
+    color: black;
     line-height: 2;
 }
 
@@ -106,6 +111,10 @@ ul li {
     text-align: center;
 }
 
+.m-auto {
+    margin: auto;
+}
+
 .groei {
     width: 70%;
     margin: auto;
@@ -136,17 +145,10 @@ ul li {
 }
 
 footer {
-    color: white;
+    background-color: white;
+    color: black;
     text-align: center;
     padding: 20px;
-}
-
-.kaart:hover {
-    transform: scale(1.05);
-}
-
-.kaart {
-    transition: all 0.3s ease-in-out;
 }
 
 .responsive {
@@ -299,12 +301,12 @@ h1 {
 
 .loaded #loader-wrapper .loader-section.section-left {
     transform: translateX(-100%);
-    transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    transition: all 0.9s;
 }
 
 .loaded #loader-wrapper .loader-section.section-right {
     transform: translateX(100%);
-    transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    transition: all 0.9s;
 }
 
 .loaded #loader {
@@ -503,4 +505,14 @@ h3 {
 
 .tekst {
     text-align: justify;
+}
+
+.btn-link {
+    color: white;
+    text-align: center;
+    margin: auto;
+}
+
+.kaart {
+    box-shadow: 1px 1px 8px #666666;
 }

@@ -52,10 +52,10 @@ article {
 article,
 h1,
 footer {
-    animation: load-in 0.65s ease-in-out;
+    animation: load-in 0.55s ease-in-out;
     animation-iteration-count: 1;
     animation-fill-mode: both;
-    animation-delay: 2s;
+    animation-delay: 1.75s;
 }
 
 header {
@@ -89,11 +89,15 @@ ul li {
 @keyframes load-in {
     from {
         filter: blur(15px);
+        transform: translate3d(0px, 200px, 0px);
         opacity: 0;
+
+
     }
 
     to {
         filter: blur(0px);
+        transform: translate3d(0px, 0px, 0px);
         opacity: 1;
     }
 }
@@ -148,7 +152,12 @@ footer {
     background-color: white;
     color: black;
     text-align: center;
-    padding: 20px;
+    padding: 50px;
+}
+
+footer p {
+    font-size: 24px;
+    font-weight: bold;
 }
 
 .responsive {
@@ -285,27 +294,18 @@ h1 {
 #loader-wrapper .loader-section {
     position: fixed;
     top: 0;
-    width: 51%;
+    width: 100%;
     height: 100%;
     background: #222;
     z-index: 10;
 }
 
-#loader-wrapper .loader-section.section-left {
-    left: 0;
-}
-
 #loader-wrapper .loader-section.section-right {
-    right: 0;
-}
-
-.loaded #loader-wrapper .loader-section.section-left {
-    transform: translateX(-100%);
-    transition: all 0.9s;
+    bottom: 0;
 }
 
 .loaded #loader-wrapper .loader-section.section-right {
-    transform: translateX(100%);
+    transform: translateY(100%);
     transition: all 0.9s;
 }
 
@@ -317,7 +317,7 @@ h1 {
 .loaded #loader-wrapper {
     visibility: hidden;
     transform: translateY(-100%);
-    transition: all 0.3s 1s ease-out;
+    transition: all 0.7s 0.3s ease-in-out;
 }
 
 .circles{
@@ -515,4 +515,15 @@ h3 {
 
 .kaart {
     box-shadow: 1px 1px 8px #666666;
+}
+
+.fab {
+    font-size: 48px;
+    color: black;
+    margin: 30px;
+    transition: 0.2s all;
+}
+
+.fab:hover {
+    color: royalblue;
 }

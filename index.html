@@ -42,7 +42,7 @@
         <!-- Links -->
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="#">Home
+                <a class="nav-link" href="index.html">Home
                     <span class="sr-only">(current)</span>
                 </a>
             </li>
@@ -194,7 +194,7 @@
                     <img class="card-img-top" src="img/skillstaak3-card.jpg" alt="Skillstaak 3 kaart">
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title">Skillstaak 3</h5>
-                        <p class="card-text">Dit was mijn tweede website voor Webdesign Essentials. **hier moet nog meer tekst**</p>
+                        <p class="card-text">Dit was mijn tweede website voor Webdesign Essentials. Hier hebben we voor de eerste keer leren werken met het Bootstrap Grid. Mijn kennis hiervan was toen nogal gelimiteerd, maar ook op dit vlak ben ik enorm gegroeid in de voorbije maanden.</p>
                         <p class="center mt-auto"><a href="" class="btn btn-primary knop">Bekijk website</a></p>
                     </div>
                 </div>
@@ -274,7 +274,7 @@
     </article>
 
     <article id="interesses">
-        <h2>Interesses & Niet-technische vaardigheden</h2>
+        <h2>Interesses &amp; Niet-technische vaardigheden</h2>
         <div class="row">
             <div class="col-lg-4 col-md-6 col-sm-12 plaats">
                 <div class="card h-100 kaart">
@@ -327,6 +327,7 @@
     </ul>
 </div >
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 <script>
     $(document).ready(function() {
         setTimeout(function() {
@@ -361,14 +362,6 @@
     });
 </script>
 <script>
-    $('#playButton').click(function () {
-        $('#homeCarousel').carousel('cycle');
-    });
-    $('#pauseButton').click(function () {
-        $('#homeCarousel').carousel('pause');
-    });
-</script>
-<script>
     $('.skill-per').each(function(){
         var $this = $(this);
         var per = $this.attr('per');
@@ -386,6 +379,6 @@
 </script>
 
 
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
 </body>
 </html>
